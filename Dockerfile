@@ -2,6 +2,4 @@ FROM node:14
 COPY ./src /app
 WORKDIR /app
 VOLUME /app/data
-ENV CDN_PORT=9999
-EXPOSE 9999
-ENTRYPOINT npm start
+CMD npm start

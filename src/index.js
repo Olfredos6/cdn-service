@@ -1,11 +1,13 @@
 const express = require('express')
-const path = require('path')
+var morgan = require('morgan')
 
 const app = express()
-const port = process.env.CDN_PORT
+const port = 8000
 
-app.use('/', express.static('../data'))
+app.use(morgan('tiny'))
+
+app.use('/', express.static('./data'))
 
 app.listen(port, ()=>{
-    console.log(`CDN Server Service running on ${port}! `)
+    console.log(`CDN Server Service runing on ${port}! `)
 })
