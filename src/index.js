@@ -6,7 +6,7 @@ const port = 8000
 
 app.use(morgan('tiny'))
 
-app.use('/', express.static('../data'))
+app.use('/', express.static('./data'))
 
 app.listen(port, ()=>{
     console.log(`CDN Server Service runing on ${port}! `)
