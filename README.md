@@ -5,7 +5,7 @@ The application allows running a service to be used solely for serving static an
 
 ## usage
 ### Using pre-built docker container
-``docker run --rm -d --name cdn -v /your/path:/app/data -p 9999:8000 olfredos6/cdn-ss:10``
+``docker run --rm -d --name cdn -v /your/path:/app/data -p YOUR_DESIRED_PORT:8000 olfredos6/cdn-ss:10``
 #### options:
 - Volume: The server look into /app/data to serve static file. Mount this volume from your desired folder
 - Port: The server listens on port 8000. Make sure to map it to your desired port.
