@@ -1,6 +1,6 @@
 # cdn-service
 
-A docker-based Node.js application that can be used as a CDN service. 
+A docker-based Node.js application that can be used as a CDN service for local development. 
 The application allows running a service to be used solely for serving static and media files. It is to be used as a content delivery server application.
 
 ## usage
